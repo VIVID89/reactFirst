@@ -20,6 +20,13 @@
             } else {
                 alert ('제출 완료');
             }
+            function genderDeselect() {
+                $("input[name='gender']").prop('checked',false);
+            }
+            function favoriteDeselect() {
+                $("input[name='favorite']").prop('checked',false);
+                
+            }
 
 
             
@@ -33,10 +40,14 @@
         <input type="text" id='lastname' required /><br>
         <label for="email"><b>Email :<br></label></b>
         <input type="text" id='email' required/><br>
-        <b>Gender : <input type="radio">Male<input type="radio"> FeMale</b>
-        <b><br>Favorite : <input type="checkbox">HTML<input type="checkbox">JAVA<input type="checkbox">JavaScript</b>
+        <b>Gender : <input type="radio" name="gender" required>Male
+                    <input type="radio" name="gender" required> FeMale</b>
+        <b><br>Favorite : <input type="checkbox" name="favorite">HTML
+                          <input type="checkbox" name="favorite">JAVA
+                          <input type="checkbox" name="favorite">JavaScript</b>
         <b><br>Browser :
             <select name="Browser">
+                <option value="선택하기">선택하기</option>
                 <option value="크롬">크롬</option>
                 <option value="사파리">사파리</option>
                 <option value="Edge">Edge</option>

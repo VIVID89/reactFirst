@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Example: 2-1</title>
+    </head>
+    <script>
+        function done() {
+            const elem = document.getElementById('firstname');
+            const elem2 = document.getElementById('lastname');
+            const elem3 = document.getElementById('email');
+            if(elem.value.length == 0) {
+                return false
+            } else if (elem2.value.length ==0) {
+                return false
+            }else if (elem3.value.length ==0) {3
+                return false
+            } else {
+                alert ('제출 완료');
+            }
+            
+        
+        }
+    </script>
+    <body>
+        <form>
+            <label for="firstname"><b>First name :<br></label></b>
+        <input type="text" id='firstname' required/><br>
+        <label for="firstname"><b>Last name :<br></label></b>
+        <input type="text" id='lastname' required /><br>
+        <label for="email"><b>Email :<br></label></b>
+        <input type="text" id='email' required/><br>
+        <b>Gender : <input type="radio">Male<input type="radio"> FeMale</b>
+        <b><br>Favorite : <input type="checkbox">HTML<input type="checkbox">JAVA<input type="checkbox">JavaScript</b>
+        <b><br>Browser :
+            <select name="Browser">
+                <option value="크롬">크롬</option>
+                <option value="사파리">사파리</option>
+                <option value="Edge">Edge</option>
+                <option value="기타">기타</option>
+            </select></b>
+        <b><br>Birthday : <input type="date" name="bday"></b>
+        <br><input type="submit" value="제출" onclick ="done()">
+    </body>
+            
+        </form>
+        
+</html>
